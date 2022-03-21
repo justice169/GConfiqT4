@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SideNavbarComponent } from './side-navbar/side-navbar.component';
+import { EventManagementComponent } from './event-management/event-management.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SideNavbarComponent,
+    EventManagementComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,75 @@
+<div class="sidebar" [ngClass]="{'active': miniopenclose == true}">
+    <div class="icon-arrow" (click)="mini()"><i class='bx bx-chevrons-right'></i></div>
+    <div class="img-sidebar">
+        <img src="../../assets/img/white-2-storey-house-near-trees-1115804.png" alt="">
+    </div>
+    <div class="PA">
+        <span class="icon-arrown"><i class='bx bx-chevron-down'></i></span>
+        <span class="title-pro">Project A</span>
+    </div>
+    <ul class="menu-PA">
+        <li (click)="goTo ('Home')" [ngClass]="{'onActive': selectedMenu == 'Home'}">
+            <a href="#">
+                <span class="icon"><i class="bx bx-home"></i></span>
+                <span class="title">Home</span>
+            </a>
+        </li>
+        <li (click)="goTo ('Location Management')" [ngClass]="{'onActive': selectedMenu == 'Location Management'}">
+            <a href="#">
+                <span class="icon"><i class="bx bx-location-plus"></i></span>
+                <span class="title">Location Management</span>
+            </a>
+        </li>
+        <li (click)="goTo ('Device Management')" [ngClass]="{'onActive': selectedMenu == 'Device Management'}">
+            <a href="#">
+                <span class="icon"><i class="bx bx-devices"></i></span>
+                <span class="title">Device Management</span>
+            </a>
+        </li>
+        <li (click)="goTo ('Event Management')" [ngClass]="{'onActive': selectedMenu == 'Event Management'}">
+            <a [routerLink]="['/event-management']" routerLinkActive="active">
+                <span class="icon"><i class="bx bx-calendar-event"></i></span>
+                <span class="title">Event Management</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="navbar">
+    <div class="toggle" (click)="mini()">
+        <i class="bx bx-menu"></i>
+    </div>
+
+    <div class="user-main">
+        <div class="user">
+            <img src="../../assets/img/meme.jpg" alt="meme">
+        </div>
+        <div class="username">Username</div>
+        <span class="icon-down"><i class='bx bx-chevron-down' ></i></span>
+    </div>
+
+    <!-- <div class="dropdown" style="float:right;">
+        <button class="dropbtn">
+            Username</button>
+        <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        </div>
+      </div> -->
+
+</div>
+
+<!-- <nav class="menu-bar">
+    <div class="group">
+        <div class="toggle" (click)="mini()">
+            <i class="bx bx-menu"></i>
+        </div>
+    </div>
+    <div class="group">
+      <a class="item">Link 1</a>
+      <a class="item">Link 2</a>
+    </div>
+  </nav> -->
+
+<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
